@@ -35,10 +35,10 @@ git push -u origin master
 # Publish and git commit
 cd output
 git add .
-git commit -m "Notebooks"
+git commit -m "No liquid tag"
 git push -u origin master
 cd ..
 git add .
-git commit -m "Notebooks"
+git commit -m "No liquid tag"
 git push -u origin master
 

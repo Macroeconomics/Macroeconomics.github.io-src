@@ -3,8 +3,6 @@ Date: 2016-12-29 10:20
 Category: Ph.D.
 Tags: Macroeconomics, IPython
 
-{% notebook notebooks/IntroPython.ipynb %}
-
 
 # Introduction to Dynamic Programming
 
