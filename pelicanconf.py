@@ -72,7 +72,7 @@ NOTEBOOK_DIR = 'downloads/notebooks'
 # Technical stuff
 # THEME
 #THEME = '../../pelican-themes/chameleon'
-THEME = '../../pelican-themes/pelican-bootstrap3'
+THEME = 'pelican-themes/pelican-bootstrap3'
 #THEME = '../../pelican-themes/bootstrap2'
 #JINJA_EXTENSIONS = ['jinja2.ext.i18n']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
@@ -80,7 +80,7 @@ BOOTSTRAP_THEME = 'simplex'
 
 # PLUGINS
 MARKUP = ('md', 'ipynb')
-PLUGIN_PATHS = ['../../pelican-plugins']
+PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['render_math', 'ipynb.markup', 'i18n_subsites', 
            'summary', 'liquid_tags.img', 'liquid_tags.video',
            'liquid_tags.youtube', 'tag_cloud', 'pelican_javascript',
