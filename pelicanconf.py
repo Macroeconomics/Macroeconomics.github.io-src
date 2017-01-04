@@ -7,7 +7,7 @@ import os
 AUTHOR = u'Ömer Özak'
 AUTHORS = u'Ömer Özak'
 SITENAME = u'Macroeconomics II (Econ-6395)'
-SITEURL = ''
+SITEURL = 'https://macroeconomics.github.io'
 FAVICON = 'images/favicomatic/favicon.ico'
 #SITELOGO = 'images/Depression.jpg'
 #SITELOGO_SIZE = 100 
@@ -52,13 +52,13 @@ LINKS = (('Ömer Özak', 'http://omerozak.com/'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False
 
 ####################################################
 # Additions 
 STATIC_PATHS = ['images', 'downloads', 'notebooks', 'pdf', 'extra/main.css',
                 'extra/font-awesome'
-                'downloads/files','downloads/code', '/images/favicon.ico']
+                'downloads/files','downloads/code', 'images/favicon.ico']
 EXTRA_PATH_METADATA = {
     'extra/main.css': {'path': 'theme/css/main.css'},
 }
