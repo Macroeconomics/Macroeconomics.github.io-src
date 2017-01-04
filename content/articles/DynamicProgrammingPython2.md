@@ -3,6 +3,9 @@ Date: 2016-12-29 10:20
 Category: Ph.D.
 Tags: Macroeconomics, IPython
 
+{% notebook notebooks/IntroPython.ipynb %}
+
+
 # Introduction to Dynamic Programming
 
 We have studied the theory of dynamic programming in discrete time under certainty. Let's review what we know so far, so that we can start thinking about how to take to the computer.

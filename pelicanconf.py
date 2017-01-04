@@ -58,7 +58,7 @@ RELATIVE_URLS = True
 # Additions 
 STATIC_PATHS = ['images', 'downloads', 'notebooks', 'pdf', 'extra/main.css',
                 'extra/font-awesome'
-                'downloads/files','downloads/code', 'images/favicon.ico']
+                'downloads/files','downloads/code', 'images/favicon.ico', 'images/pics']
 EXTRA_PATH_METADATA = {
     'extra/main.css': {'path': 'theme/css/main.css'},
 }
@@ -82,11 +82,15 @@ BOOTSTRAP_THEME = 'simplex'
 MARKUP = ('md', 'ipynb')
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['render_math', 'ipynb.markup', 'i18n_subsites', 
-           'summary', 'liquid_tags.img', 'liquid_tags.video',
+           'summary', 'liquid_tags.img', 'liquid_tags.video', 
            'liquid_tags.youtube', 'tag_cloud', 'pelican_javascript',
-           'ipynb.markup', 'liquid_tags.include_code', 'pelican-ipynb.liquid',
+            'liquid_tags.include_code', 'ipynb.liquid',
            'liquid_tags.literal', 'pelicanfly']
 macros = ['/home/user/latex-macros.tex']
+
+# ipynb
+IGNORE_FILES = ['.ipynb_checkpoints']
+IPYNB_IGNORE_CSS = True
 
 # MATH_JAX
 MATH_JAX = {'color': 'blue', 'align': 'left', 'macros': macros}
@@ -138,6 +142,7 @@ MENUITEMS = (
     ('Syllabus', '/pages/Syllabus.html'),
     ('Lecture Notes', '/pages/Lecture Notes.html'),
     ('Practice Material', '/pages/Practice Material.html'),
+    ('Computation', '/pages/Computation.html'),
     ('CV', '/pages/CV.html'),
 #    ('About', '/pages/About.html'),
 #    ('Blog', '/category/blog.html'),
