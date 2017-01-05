@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 import os
 
-DELETE_OUTPUT_DIRECTORY = True
+DELETE_OUTPUT_DIRECTORY = False
 # Me
 AUTHOR = u'Ömer Özak'
 AUTHORS = u'Ömer Özak'
