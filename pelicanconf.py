@@ -18,7 +18,7 @@ FAVICON = 'images/favicomatic/favicon.ico'
 
 PATH = 'content'
 
-TIMEZONE = 'America/Mexico_City'
+TIMEZONE = 'America/Chicago'
 DEFAULT_LANG = u'en'
 DISPLAY_PAGES_ON_MENU = True
 
