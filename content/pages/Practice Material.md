@@ -4,7 +4,7 @@ Author: ozak
 Slug: Practice Material
 
 
-#Suggested Exercises in Acemoglu
+##Suggested Exercises in Acemoglu
 
 Solutions to most exercises can be found on the web. I highly recommend you try to solve them on your own before comparing your solutions with other students. At the beginning it may take you time to be able to solve a question. Do not panick...you'll get better the more you practice.
 
@@ -22,11 +22,11 @@ Solutions to most exercises can be found on the web. I highly recommend you try 
 
 --------------------------------------
 
-#Homework
+##Homework
 
 --------------------------------------
 
-# Exams
+##Exams
 
 --------------------------------------
 
