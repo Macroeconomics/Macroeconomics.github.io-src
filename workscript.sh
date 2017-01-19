@@ -11,6 +11,7 @@ git remote -v
 
 # Clone output
 git submodule add git@github.com:Macroeconomics/Macroeconomics.github.io.git output
+git submodule add git@github.com:Macroeconomics/pelican-plugins.git pelican-plugins
 
 # Create baseline
 pelican-quickstart
