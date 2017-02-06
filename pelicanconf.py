@@ -146,8 +146,8 @@ MENUITEMS = (
     ('Computation', '/pages/Computation.html'),
     ('CV', '/pages/CV.html'),
 #    ('About', '/pages/About.html'),
-#    ('Blog', '/category/blog.html'),
-    ('Email', 'http://www.google.com/recaptcha/mailhide/d?6LfmLBAUAAAAADdznVp2XJ1GUaPXKYV56-VSIn5E'),
+    ('Contact', '/pages/Contact.html'),
+    #('Email', 'http://www.google.com/recaptcha/mailhide/d?k=01Mcn4h5MJg-nEwpTtN4oQVg==&c=5mZN5MlTpATyB-iUqDo8FQ=='),
     )
 
 # License
