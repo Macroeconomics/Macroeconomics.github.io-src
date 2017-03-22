@@ -36,10 +36,10 @@ git push -u origin master
 # Publish and git commit
 cd output
 git add .
-git commit -m "lectures4"
+git commit -m "lectures6"
 git push -u origin master
 cd ..
 git add .
-git commit -m "lectures4"
+git commit -m "lectures6"
 git push -u origin master
 
