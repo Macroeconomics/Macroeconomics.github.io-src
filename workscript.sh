@@ -1,4 +1,5 @@
-
+# Select Correct Python
+source activate GeoPython2env
 # Go to directory
 cd ~/GitHub/Macroeconomics.github.io-src
 
@@ -36,10 +37,10 @@ git push -u origin master
 # Publish and git commit
 cd output
 git add .
-git commit -m "lectures6"
+git commit -m "syllabus-2018"
 git push -u origin master
 cd ..
 git add .
-git commit -m "lectures6"
+git commit -m "syllabus-2018"
 git push -u origin master
 
