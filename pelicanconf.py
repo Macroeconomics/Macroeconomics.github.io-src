@@ -11,7 +11,7 @@ SITENAME = u'Macroeconomics II (Econ-6395)'
 SITEURL = 'https://macroeconomics.github.io'
 FAVICON = 'images/favicomatic/favicon.ico'
 #SITELOGO = 'images/Depression.jpg'
-#SITELOGO_SIZE = 100 
+#SITELOGO_SIZE = 100
 #BANNER = '/images/cropped-escher2-990x1804.jpg'
 #BANNER_SUBTITLE = 'Ömer Özak'
 #BANNER_ALL_PAGES = True
@@ -29,7 +29,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Feeds 
+# Feeds
 FEEDS =  (('All posts', 'feeds/all.atom.xml'),
           ('Category', 'feeds/category'),
           ('OPW', 'feeds/tag/opw.atom.xml'),)
@@ -56,7 +56,7 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 ####################################################
-# Additions 
+# Additions
 STATIC_PATHS = ['images', 'downloads', 'notebooks', 'pdf', 'extra/main.css',
                 'extra/font-awesome'
                 'downloads/files','downloads/code', 'images/favicon.ico', 'images/pics']
@@ -81,12 +81,12 @@ BOOTSTRAP_THEME = 'simplex'
 
 # PLUGINS
 MARKUP = ('md', 'ipynb')
-PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['render_math', 'ipynb.markup', 'i18n_subsites', 
-           'summary', 'liquid_tags.img', 'liquid_tags.video', 
+PLUGIN_PATHS = ['../../pelican-plugins']
+PLUGINS = ['render_math', 'ipynb.markup', 'i18n_subsites',
+           'summary', 'liquid_tags.img', 'liquid_tags.video',
            'liquid_tags.youtube', 'tag_cloud', 'pelican_javascript',
             'liquid_tags.include_code', 'ipynb.liquid',
-           'liquid_tags.literal', 'pelicanfly']
+           'liquid_tags.literal']
 macros = ['/home/user/latex-macros.tex']
 
 # ipynb
@@ -118,7 +118,7 @@ BS3_JS  = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js'
 '''
 BOOTSTRAP_THEME='flatly' #looks good, some color
 #BOOTSTRAP_THEME='journal' #also looks good, more B&W
-#BOOTSTRAP_THEME='readable' 
+#BOOTSTRAP_THEME='readable'
 
 #BOOTSTRAP_THEME='paper'
 DISPLAY_BREADCRUMBS=False
@@ -126,7 +126,7 @@ BOOTSTRAP_NAVBAR_INVERSE=False
 DISPLAY_RECENT_POSTS_ON_SIDEBAR=True
 
 TAG_CLOUD_STEPS = 4
-TAG_CLOUD_BADGE = True  
+TAG_CLOUD_BADGE = True
 DISPLAY_TAGS_ON_SIDEBAR=True
 TAG_CLOUD_MAX_ITEMS=25
 DISPLAY_TAGS_INLINE=True

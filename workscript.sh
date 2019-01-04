@@ -37,10 +37,9 @@ git push -u origin master
 # Publish and git commit
 cd output
 git add .
-git commit -m "syllabus-2018-md"
+git commit -m "Updated Python 3"
 git push -u origin master
 cd ..
 git add .
-git commit -m "syllabus-2018-md"
+git commit -m "Updated Python 3"
 git push -u origin master
-
