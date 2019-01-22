@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+# coding: utf-8
+'''
+======================================================
+Author:  Ömer Özak, 2014 (ozak at smu.edu)
+Website: http://omerozak.com
+GitHub:  https://github.com/ozak/
+======================================================
+Copy and rename content for macro course
+'''
+from __future__ import division
+import sys, os, fnmatch
+from shutil import copyfile
+import pandas as pd
+pd.set_option('display.width', 140)
+
+def find(pattern, path):
+    result = []
+    for root, dirs, files in os.walk(path):
+        for name in files:
+            if fnmatch.fnmatch(name, pattern):
+                result.append(os.path.join(root, name))
+    return result
+
+# Set path of original files
+%cd MacroII
+path = os.path.abspath('./') + '/'
+
+# Set path of output files
+%cd MacroIIWebsite
+pathout = os.path.abspath('./') + '/'
+
+# Get lecture files and copy and rename them
+slides = find('*Chapter*.pdf', path)
+for i in slides:
+    j = i.replace(path, '')
+    j = j[2:j.find('/')]
+    j = int(j)
+    if j>4:
+        j -= 1
+    j = pathout + 'LectureNotes' + str(j) + '.pdf'
+    print(j)
+    copyfile(i, j)
