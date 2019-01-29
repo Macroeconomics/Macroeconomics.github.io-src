@@ -17,6 +17,9 @@ git submodule add git@github.com:Macroeconomics/pelican-plugins.git pelican-plug
 # Create baseline
 pelican-quickstart
 
+# copy files
+ipython copy_content.ipy
+
 # Create content and see website
 make html && make serve
 make html && make publish
