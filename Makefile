@@ -70,26 +70,49 @@ clean:
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
+# Old
+#serve:
+#ifdef PORT
+#	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
+#else
+#	cd $(OUTPUTDIR) && $(PY) -m pelican.server
+#endif
+#
+#serve-global:
+#ifdef SERVER
+#	cd $(OUTPUTDIR) && $(PY) -m pelican.server 80 $(SERVER)
+#else
+#	cd $(OUTPUTDIR) && $(PY) -m pelican.server 80 0.0.0.0
+#endif
+#
+#
+#devserver:
+#ifdef PORT
+#	$(BASEDIR)/develop_server.sh restart $(PORT)
+#else
+#	$(BASEDIR)/develop_server.sh restart
+#endif
+
 serve:
 ifdef PORT
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
+	$(PELICAN) -l $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT)
 else
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server
+	$(PELICAN) -l $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 endif
 
 serve-global:
 ifdef SERVER
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server 80 $(SERVER)
+	$(PELICAN) -l $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT) -b $(SERVER)
 else
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server 80 0.0.0.0
+	$(PELICAN) -l $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT) -b 0.0.0.0
 endif
 
 
 devserver:
 ifdef PORT
-	$(BASEDIR)/develop_server.sh restart $(PORT)
+	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT)
 else
-	$(BASEDIR)/develop_server.sh restart
+	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 endif
 
 stopserver:
@@ -112,7 +135,7 @@ ftp_upload: publish
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
 
 s3_upload: publish
-	s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl-public --delete-removed --guess-mime-type
+	s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl-public --delete-removed --guess-mime-type --no-mime-magic --no-preserve
 
 cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
@@ -121,4 +144,4 @@ github: publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
-.PHONY: html help clean regenerate serve serve-global devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
+.PHONY: html help clean regenerate serve serve-global devserver stopserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github

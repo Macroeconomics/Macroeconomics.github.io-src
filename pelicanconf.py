@@ -35,8 +35,8 @@ FEEDS =  (('All posts', 'feeds/all.atom.xml'),
           ('OPW', 'feeds/tag/opw.atom.xml'),)
 
 # Social widget
-SOCIAL = (('Github', 'https://github.com/Macroeconomics'),
-          #('Twitter', 'https://twitter.com/'),
+SOCIAL = (('Github', 'https://github.com/econgrowth'),
+          ('Twitter', 'https://twitter.com/OmerOzakEcon'),
           ('Linkedin', 'https://linkedin.com/in/omerozak'),
           ('Researchgate','https://www.researchgate.net/profile/Oemer_Oezak'),)
 
@@ -62,13 +62,17 @@ STATIC_PATHS = ['images', 'downloads', 'notebooks', 'pdf', 'extra/main.css',
                 'downloads/files','downloads/code', 'images/favicon.ico', 'images/pics']
 EXTRA_PATH_METADATA = {
     'extra/main.css': {'path': 'theme/css/main.css'},
+    'extra/custom.css': {'path': 'static/custom.css'},
 }
+
+# tell the pelican-bootstrap-3 theme where to find the custom.css file in your output folder
+CUSTOM_CSS = 'static/custom.css'
 
 READERS = {'html': None}
 
-
-CODE_DIR = 'downloads/code'
-NOTEBOOK_DIR = 'downloads/notebooks'
+CODE_DIR = 'notebooks/'
+NOTEBOOK_DIR = 'notebooks/'
+IPYNB_NB_SAVE_AS = 'notebooks/'
 
 # Technical stuff
 # THEME

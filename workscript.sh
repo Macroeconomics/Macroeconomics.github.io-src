@@ -22,6 +22,7 @@ ipython copy_content.ipy
 
 # Create content and see website
 make html && make serve
+make html && make publish && make serve
 make html && make publish
 # If it is ok
 make publish
@@ -40,9 +41,9 @@ git push -u origin master
 # Publish and git commit
 cd output
 git add .
-git commit -m "Updated lecture 4 & 5"
+git commit -m "Updated syllabus"
 git push -u origin master
 cd ..
 git add .
-git commit -m "Updated  lecture 4 & 5"
+git commit -m "Updated syllabus"
 git push -u origin master
