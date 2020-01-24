@@ -50,7 +50,7 @@ LINKS = (('Ömer Özak', 'http://omerozak.com/'),
          ('Dept. Economics', 'http://www.smu.edu/economics'),
          ('SMU', 'http://www.smu.edu/'),)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 20
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
