@@ -41,9 +41,9 @@ git push -u origin master
 # Publish and git commit
 cd output
 git add .
-git commit -m "Updated Lecture 2"
+git commit -m "Updated Lecture 1, 2 & 3"
 git push -u origin master
 cd ..
 git add .
-git commit -m "Updated Lecture 2"
+git commit -m "Updated Lecture 1, 2 & 3"
 git push -u origin master
