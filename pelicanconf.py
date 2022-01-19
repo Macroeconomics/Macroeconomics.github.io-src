@@ -3,6 +3,11 @@
 from __future__ import unicode_literals
 import os
 
+from pelican_jupyter import markup as nb_markup
+from pelican_jupyter import liquid as nb_liquid
+
+#LIQUID_CONFIGS = (("IPYNB_EXPORT_TEMPLATE", "base", ""),)
+
 DELETE_OUTPUT_DIRECTORY = False
 # Me
 AUTHOR = u'Ömer Özak'
@@ -57,9 +62,11 @@ RELATIVE_URLS = True
 
 ####################################################
 # Additions
+# tell pelican where your custom.css file is in your content folder
 STATIC_PATHS = ['images', 'downloads', 'notebooks', 'pdf', 'extra/main.css',
                 'extra/font-awesome'
                 'downloads/files','downloads/code', 'images/favicon.ico', 'images/pics']
+# tell pelican where it should copy that file to in your output folder
 EXTRA_PATH_METADATA = {
     'extra/main.css': {'path': 'theme/css/main.css'},
     'extra/custom.css': {'path': 'static/custom.css'},
@@ -86,13 +93,23 @@ BOOTSTRAP_THEME = 'simplex'
 # PLUGINS
 MARKUP = ('md', 'ipynb')
 PLUGIN_PATHS = ['../../pelican-plugins']
+'''
 PLUGINS = ['render_math', 'ipynb.markup', 'i18n_subsites',
            'summary', 'liquid_tags.img', 'liquid_tags.video',
            'liquid_tags.youtube', 'tag_cloud', 'pelican_javascript',
-            'liquid_tags.include_code', 'ipynb.liquid',
+            'liquid_tags.include_code', 'ipynb.liquid', 'ipynb.markup',
            'liquid_tags.literal']
+'''
 macros = ['/home/user/latex-macros.tex']
 
+PLUGINS = ['render_math', 'liquid_tags.img', nb_markup, 'representative_image']
+
+'''
+# configuring notebook integration
+LIQUID_CONFIGS = (("IPYNB_FIX_CSS", "False", ""),
+                  ("IPYNB_SKIP_CSS", "False", ""),
+                  ("IPYNB_EXPORT_TEMPLATE", "base", ""),)
+'''
 # ipynb
 IGNORE_FILES = ['.ipynb_checkpoints']
 IPYNB_IGNORE_CSS = True
