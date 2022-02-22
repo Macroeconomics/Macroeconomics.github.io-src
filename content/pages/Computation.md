@@ -87,7 +87,7 @@ You can update an existing list by
 
 	 adolist update mystatapacks_latest.pkl
 	 
-[Here](https://www.dropbox.com/s/ryrskg415wkvyj5/mystatapacks_latest.pkl?dl=0) is my latest ``mystatapacks_latest.pkl`` in case you want to have some useful packges installed.
+[Here](https://www.dropbox.com/s/8s7hagunvaheqto/mystatapacks_latest.pkl?dl=0) is my latest ``mystatapacks_latest.pkl`` in case you want to have some useful packges installed.
 
 ---
 #Installing (I)Python & Jupyter
@@ -101,13 +101,13 @@ Since the basic installation may not have all the packages you need and it is al
 
 A. **(Recommended)** In a terminal window execute
 
-	conda create --name GeoPython39env -c conda-forge -c r -c mro --override-channels python=3.9 georasters geopandas pandas spatialpandas statsmodels xlrd networkx ipykernel ipyparallel ipython ipython_genutils ipywidgets jupyter jupyterlab kiwisolver matplotlib-base matplotlib scikit-image scikit-learn scipy seaborn geoplot geopy geotiff pycountry nb_conda_kernels stata_kernel 
+	conda create --name GeoPython39env -c conda-forge -c r -c mro --override-channels python=3.9 georasters geopandas pandas spatialpandas statsmodels xlrd networkx ipykernel ipyparallel ipython ipython_genutils ipywidgets jupyter jupyterlab kiwisolver matplotlib-base matplotlib scikit-image scikit-learn scipy seaborn geoplot geopy geotiff pycountry nb_conda_kernels stata_kernel nltk
 
 
 or if you want a very complete environment
 
 
-	conda create --name GeoPython39env -c conda-forge -c r -c mro --override-channels python=3.9 asciitree autopep8 babel basemap beautifulsoup4 blas bokeh bzip2 cartopy colorcet curl cython cytoolz dask dask-core datashader datashape descartes dill docutils earthengine-api fiona gensim geographiclib geopandas geoplot geopy geotiff google-api-python-client google-auth google-auth-httplib2 georasters imageio imagesize ipykernel ipyparallel ipython ipython_genutils ipywidgets jupyter jupyterlab kiwisolver matplotlib-base matplotlib markdown networkx nose numba numpy openpyxl pandas pandas-datareader pandoc pandocfilters pandana pelican pycountry pymc3 pysal urbanaccess rasterstats r r-base r-irkernel statsmodels sympy rpy2 rasterio r-tidyr r-tibble r-dplyr rise seaborn scikit-allel scikit-bio scikit-image scikit-learn scipy seaborn swifter theano unidecode urllib3 wikipedia xlrd jupyter_contrib_nbextensions rstudio camelot-py html5lib ghostscript plotnine nodejs nb_conda_kernels stata_kernel libgfortran-ng
+	conda create --name GeoPython39env -c conda-forge -c r -c mro --override-channels python=3.9 asciitree autopep8 babel basemap beautifulsoup4 blas bokeh bzip2 cartopy colorcet curl cython cytoolz dask dask-core datashader datashape descartes dill docutils earthengine-api fiona gensim geographiclib geopandas geoplot geopy geotiff google-api-python-client google-auth google-auth-httplib2 georasters imageio imagesize ipykernel ipyparallel ipython ipython_genutils ipywidgets jupyter jupyterlab kiwisolver matplotlib-base matplotlib markdown networkx nose numba numpy openpyxl pandas pandas-datareader pandoc pandocfilters pandana pelican pycountry pymc3 pysal urbanaccess rasterstats r r-base r-irkernel statsmodels sympy rpy2 rasterio r-tidyr r-tibble r-dplyr rise seaborn scikit-allel scikit-bio scikit-image scikit-learn scipy seaborn swifter theano unidecode urllib3 wikipedia xlrd jupyter_contrib_nbextensions rstudio camelot-py html5lib ghostscript plotnine nodejs nb_conda_kernels stata_kernel libgfortran-ng nltk
 
 Next execute 
 
@@ -161,7 +161,7 @@ This should create an environment with all the packages you will require for thi
 
 To start using one of the environment you will need to exectute the following command
 
-    source activate GeoPython38env
+    conda activate GeoPython39env
 
 or for ``Python 2.x``
 
