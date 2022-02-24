@@ -20,10 +20,10 @@ On ``MacOS`` you can use [Homebrew](https://brew.sh/), which is an excellent too
 Third, install some of the software we will use, including ``qgis``, ``MacTeX``, ``R``, ``Rstudio``
 
 	brew tap osgeo/osgeo4mac
-	brew cask install qgis
-	brew cask install mactex
+	brew install qgis
+	brew install mactex
 	brew install r
-	brew cask install rstudio
+	brew install rstudio
 
 There are many tools that can be installed via ``Homebrew`` whenever needed. Try it out!
 
