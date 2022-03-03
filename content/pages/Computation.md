@@ -241,7 +241,7 @@ More info in the [``rpy2`` website](https://rpy2.bitbucket.io/).
 #Notebooks
 
 * Notebook 1: Introduction [(html)](/IntroPython.html) [(ipynb)](/notebooks/IntroPython.ipynb)
-* Notebook 2: Introduction to CGE [(html)](/IntroCGE..html) [(ipynb)](/notebooks/IntroCGE.ipynb)
+* Notebook 2: Introduction to CGE [(html)](/IntroCGE.html) [(ipynb)](/notebooks/IntroCGE.ipynb)
 * Notebook 3: Dynamic Programming in Python [(html)](/Dynamic Programming.html) [(ipynb)](/notebooks/DynamicProgramming.ipynb)
 * Notebook 4: Faster Dynamic Programming with Numba [(html)](/Dynamic Programming Numba.html) [ipynb](Faster Computation with Numba.ipynb)
 * Notebook 5: Economic Data Analysis [(html)](/Economic Data Analysis.html) [(ipynb)](/notebooks/EconomicDataAnalysis.ipynb)
