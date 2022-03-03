@@ -101,7 +101,7 @@ Since the basic installation may not have all the packages you need and it is al
 
 A. **(Recommended)** In a terminal window execute
 
-	conda create --name GeoPython39env -c conda-forge -c r -c mro --override-channels python=3.9 georasters geopandas pandas spatialpandas statsmodels xlrd networkx ipykernel ipyparallel ipython ipython_genutils ipywidgets jupyter jupyterlab kiwisolver matplotlib-base matplotlib scikit-image scikit-learn scipy seaborn geoplot geopy geotiff pycountry nb_conda_kernels stata_kernel nltk
+	conda create --name GeoPython39env -c conda-forge -c r -c mro --override-channels python=3.9 georasters geopandas pandas spatialpandas statsmodels xlrd networkx ipykernel ipyparallel ipython ipython_genutils ipywidgets jupyter jupyterlab kiwisolver matplotlib-base matplotlib scikit-image scikit-learn scipy seaborn geoplot geopy geotiff pycountry nb_conda_kernels stata_kernel nltk ipympl
 	
 or download [this file](https://www.dropbox.com/s/a12mskj7f50xq0q/EconGrowth.yml?dl=0) and import it into the Anconda Navigator [(see here)](https://docs.anaconda.com/anaconda/navigator/tutorials/manage-environments/#importing-an-environment).
 
@@ -109,7 +109,7 @@ or download [this file](https://www.dropbox.com/s/a12mskj7f50xq0q/EconGrowth.yml
 If you want a very complete environment
 
 
-	conda create --name GeoPython39env -c conda-forge -c r -c mro --override-channels python=3.9 asciitree autopep8 babel basemap beautifulsoup4 blas bokeh bzip2 cartopy colorcet curl cython cytoolz dask dask-core datashader datashape descartes dill docutils earthengine-api fiona gensim geographiclib geopandas geoplot geopy geotiff google-api-python-client google-auth google-auth-httplib2 georasters imageio imagesize ipykernel ipyparallel ipython ipython_genutils ipywidgets jupyter jupyterlab kiwisolver matplotlib-base matplotlib markdown networkx nose numba numpy openpyxl pandas pandas-datareader pandoc pandocfilters pandana pelican pycountry pymc3 pysal urbanaccess rasterstats r r-base r-irkernel statsmodels sympy rpy2 rasterio r-tidyr r-tibble r-dplyr rise seaborn scikit-allel scikit-bio scikit-image scikit-learn scipy seaborn swifter theano unidecode urllib3 wikipedia xlrd jupyter_contrib_nbextensions rstudio camelot-py html5lib ghostscript plotnine nodejs nb_conda_kernels stata_kernel libgfortran-ng nltk
+	conda create --name GeoPython39env -c conda-forge -c r -c mro --override-channels python=3.9 asciitree autopep8 babel basemap beautifulsoup4 blas bokeh bzip2 cartopy colorcet curl cython cytoolz dask dask-core datashader datashape descartes dill docutils earthengine-api fiona gensim geographiclib geopandas geoplot geopy geotiff google-api-python-client google-auth google-auth-httplib2 georasters imageio imagesize ipykernel ipyparallel ipython ipython_genutils ipywidgets jupyter jupyterlab kiwisolver matplotlib-base matplotlib markdown networkx nose numba numpy openpyxl pandas pandas-datareader pandoc pandocfilters pandana pelican pycountry pymc3 pysal urbanaccess rasterstats r r-base r-irkernel statsmodels sympy rpy2 rasterio r-tidyr r-tibble r-dplyr rise seaborn scikit-allel scikit-bio scikit-image scikit-learn scipy seaborn swifter theano unidecode urllib3 wikipedia xlrd jupyter_contrib_nbextensions rstudio camelot-py html5lib ghostscript plotnine nodejs nb_conda_kernels stata_kernel libgfortran-ng nltk ipympl
 
 Next execute 
 
@@ -241,15 +241,16 @@ More info in the [``rpy2`` website](https://rpy2.bitbucket.io/).
 #Notebooks
 
 * Notebook 1: Introduction [(html)](/IntroPython.html) [(ipynb)](/notebooks/IntroPython.ipynb)
-* Notebook 2: Dynamic Programming in Python [(html)](/Dynamic Programming.html) [(ipynb)](/notebooks/DynamicProgramming.ipynb)
-* Notebook 3: Faster Dynamic Programming with Numba [(html)](/Dynamic Programming Numba.html) [ipynb](Faster Computation with Numba.ipynb)
-* Notebook 4: Economic Data Analysis [(html)](/Economic Data Analysis.html) [(ipynb)](/notebooks/EconomicDataAnalysis.ipynb)
-* Notebook 5: GIS with QGIS [(html)](/GIS with QGIS.html) [(ipynb)](/notebooks/GIS.ipynb)
-* Notebook 6: GIS with Python (Geometries) [(html)](/GIS with Python.html) [(ipynb)](/notebooks/GIS with Python.ipynb)
-* Notebook 7: GIS with Python 2 (Rasters) [(html)](/GIS with Python 2.html) [(ipynb)](/notebooks/GIS with Python 2.ipynb)
-* Notebook 8: GIS with Python 3 (Data Munging) [(html)](/GIS with Python 3.html) [(ipynb)](/notebooks/GIS with Python 3.ipynb)
-* Notebook 9: Stata Jupyter Notebooks (Stata kernel) [(html)](/Stata Notebook Example.html) [(ipynb)](/notebooks/Stata Notebook Example.ipynb)
-* Notebook 10: Stata in a Python Jupyter Notebook (ipystata) [(html)](/Stata in Python Notebook.html) [(ipynb)](/notebooks/Stata in Python Notebook.ipynb)
+* Notebook 2: Introduction to CGE [(html)](/IntroCGE..html) [(ipynb)](/notebooks/IntroCGE.ipynb)
+* Notebook 3: Dynamic Programming in Python [(html)](/Dynamic Programming.html) [(ipynb)](/notebooks/DynamicProgramming.ipynb)
+* Notebook 4: Faster Dynamic Programming with Numba [(html)](/Dynamic Programming Numba.html) [ipynb](Faster Computation with Numba.ipynb)
+* Notebook 5: Economic Data Analysis [(html)](/Economic Data Analysis.html) [(ipynb)](/notebooks/EconomicDataAnalysis.ipynb)
+* Notebook 6: GIS with QGIS [(html)](/GIS with QGIS.html) [(ipynb)](/notebooks/GIS.ipynb)
+* Notebook 7: GIS with Python (Geometries) [(html)](/GIS with Python.html) [(ipynb)](/notebooks/GIS with Python.ipynb)
+* Notebook 8: GIS with Python 2 (Rasters) [(html)](/GIS with Python 2.html) [(ipynb)](/notebooks/GIS with Python 2.ipynb)
+* Notebook 9: GIS with Python 3 (Data Munging) [(html)](/GIS with Python 3.html) [(ipynb)](/notebooks/GIS with Python 3.ipynb)
+* Notebook 10: Stata Jupyter Notebooks (Stata kernel) [(html)](/Stata Notebook Example.html) [(ipynb)](/notebooks/Stata Notebook Example.ipynb)
+* Notebook 11: Stata in a Python Jupyter Notebook (ipystata) [(html)](/Stata in Python Notebook.html) [(ipynb)](/notebooks/Stata in Python Notebook.ipynb)
 
 
 ---

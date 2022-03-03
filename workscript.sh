@@ -41,9 +41,9 @@ git push -u origin master
 # Publish and git commit
 cd output
 git add .
-git commit -m "Updated Computation"
+git commit -m "Updated Computation & added Intro CGE"
 git push -u origin master
 cd ..
 git add .
-git commit -m "Updated Computation"
+git commit -m "Updated Computation & added Intro CGE"
 git push -u origin master
