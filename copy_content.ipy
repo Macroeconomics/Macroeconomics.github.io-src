@@ -23,12 +23,12 @@ def find(pattern, path):
     return result
 
 # Set path of original files
-%cd MacroII
-path = os.path.abspath('./') + '/'
+#%cd MacroII
+path = os.getenv('HOME') + '/Dropbox/SMU/Teach/Macro II/Macro-II-Lectures/slidesMacroII/FinalVersions/'
 
 # Set path of output files
-%cd MacroIIWebsite
-pathout = os.path.abspath('./') + '/'
+#%cd MacroIIWebsite
+pathout = os.getcwd() + '/content/pdf/'
 
 # Get lecture files and copy and rename them
 slides = find('*Chapter*.pdf', path)
